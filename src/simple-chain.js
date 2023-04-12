@@ -30,9 +30,9 @@ const chainMaker = {
 		return this;
 	},
 	finishChain() {
-		const finalStr = structuredClone(this.str);
+		const finalStr = this.str.join("~~");
 		this.str = [];
-		return finalStr.join("~~");
+		return finalStr;
 	},
 };
 
